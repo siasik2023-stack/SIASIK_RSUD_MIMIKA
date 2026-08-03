@@ -1,0 +1,43 @@
+Jika Anda belum pernah menggunakan clasp, berikut adalah prosedur standar untuk melakukannya dari komputer Anda:
+
+  1. Prasyarat (Lakukan Sekali Saja)
+  Pastikan komputer Anda sudah terinstal Node.js. Setelah itu, buka terminal (di direktori proyek D:\SIASIK_RSUD_MIMIKA)
+  dan jalankan:
+
+   1 # Instal clasp secara global
+   2 npm install -g @google/clasp
+   3
+   4 # Login ke akun Google Anda (akan membuka browser)
+   5 clasp login
+
+  2. Hubungkan Proyek ke Google Apps Script
+  Jika Anda belum menghubungkan proyek lokal dengan proyek di Google, jalankan:
+
+   1 # Membuat proyek baru di Google
+   2 clasp create --title "SIASIK RSUD Mimika" --type webapp
+
+  Jika proyek sudah ada di Google, Anda hanya perlu mengunduh scriptId yang benar dan menambahkannya ke file .clasp.json
+  (seperti yang sudah ada di direktori Anda).
+
+  3. Deploy ke Produksi (Satu Perintah)
+  Setelah akun terautentikasi dan proyek terhubung, Anda bisa melakukan deployment langsung dari terminal:
+
+   1 # 1. Kirim kode dari lokal ke Google Apps Script
+   2 clasp push
+   3
+   4 # 2. Buat deployment baru
+   5 clasp deploy
+
+  ---
+
+  Jika Anda Lebih Suka Cara Manual (Tanpa CLI):
+  Anda tetap bisa melakukannya melalui antarmuka (GUI) Google Apps Script dengan prosedur yang sudah kita bahas
+  sebelumnya:
+   1. Buka Apps Script di browser.
+   2. Salin isi file dari direktori lokal Anda ke file yang sesuai di editor Apps Script.
+   3. Klik Deploy > New Deployment.
+   4. Ikuti petunjuk di layar.
+
+  Apakah Anda ingin saya mendampingi Anda menjalankan langkah-langkah di atas melalui terminal, atau ada kendala
+  spesifik saat Anda mencoba mengakses Google Apps Script? Saya siap memandu Anda di setiap tahapnya.
+
